@@ -7,33 +7,25 @@
  */
 int main(void)
 {
-	int counter = 0;
+	int counter = 2;
 
-	unsigned long first = 0;
+	float a = 1;
+        float b = a + 1;
+        float c = a + b;
 
-	unsigned long second = 1;
-
-	unsigned long fib;
-
-	while (counter <= 94)
+        printf("%.0f, ", a);
+        printf("%.0f, ", b);
+	while (counter < 98)
 	{
-		fib = first + second;
-
-		if (counter < 94)
-		{
-			printf("%lu, ", fib);
-		}
-
-		else
-		{
-			printf("%lu", fib);
-		}
-
-		first = second;
-
-		second = fib;
-
 		counter++;
+                printf("%.0f", c);
+                a = b;
+                b = c;
+                c = a + b;
+		if (counter < 98)
+		{
+			printf(", ");
+		}	
 	}
 	printf("\n");
 
