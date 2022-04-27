@@ -9,17 +9,17 @@ int main(void)
 {
 	int counter = 0;
 
-	unsigned long first = 1;
+	unsigned long first = 0;
 
-	unsigned long second = 2;
+	unsigned long second = 1;
 
 	unsigned long fib;
 
-	while (counter <= 97)
+	while (counter <= 94)
 	{
 		fib = first + second;
 
-		if (counter < 97)
+		if (counter < 94)
 		{
 			printf("%lu, ", fib);
 		}
