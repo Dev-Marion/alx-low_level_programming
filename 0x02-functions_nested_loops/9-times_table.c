@@ -1,13 +1,9 @@
-nclude "main.h"
+#include "main.h"
 
 /**
-
 *times_table - prints the 9 times table
-
 *
-
 *Return: returns nothing
-
 */
 
 void times_table(void)
@@ -45,8 +41,8 @@ _putchar((result / 10) + '0');
 
 _putchar((result % 10) + '0');
 
-}
 
+}
 _putchar('\n');
 
 }
